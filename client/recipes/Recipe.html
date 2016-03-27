@@ -1,13 +1,12 @@
 <template name="Recipe">
   <article class="recipe">
     <h3>{{name}}</h3>
-    <p>
-      {{desc}}
-    </p>
+    <p>{{desc}}</p>
     <p>
       {{#each ingredients}}
-      <span class="ingradient">{{name}} - {{amount}}</span>
+      <span class="ingradient">{{name}} - {{amount}}</span><br/>
       {{/each}}
     </p>
+    <a href="/recipe/{{_id}}">View details</a>
   </article>
 </template>

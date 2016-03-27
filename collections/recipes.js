@@ -1,4 +1,4 @@
-Recipes = new Meteor.Collection('recipes');
+Recipes = new Mongo.Collection('recipes');
 
 Recipes.allow({
   insert: function(userid,doc){
